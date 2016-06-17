@@ -1,5 +1,5 @@
 do
-local api_key = '188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg'
+local api_key = '226433659:AAF3wlX3dxoF_40I5NbsYdgYzp9-91FEPMw'
 local function run(msg, matches)
 if matches[1]:lower() == 'pm' then
 local txt = URL.escape(matches[2])
