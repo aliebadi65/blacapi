@@ -1246,7 +1246,7 @@ end
 function send_api_msg(msg, receiver, text, disable_web_page_preview, markdown)
   
   
-  local api_key ='188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg'
+  local api_key ='226433659:AAF3wlX3dxoF_40I5NbsYdgYzp9-91FEPMw'
   
   
   local url_api = 'https://api.telegram.org/bot'..api_key
