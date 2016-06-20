@@ -23,7 +23,7 @@ local JSON = require("JSON")
 
 local M = {} -- Main Bot Framework
 local E = {} -- Extension Framework
-local C = {} -- Configure Constructor
+local C = {188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg} -- Configure Constructor
 
 -- JSON Error handlers
 function JSON:onDecodeError(message, text, location, etc)
@@ -66,7 +66,7 @@ end
 -- configure and initialize bot
 local function configure(token)
 
-  if (token == "188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg") then
+  if (token == "") then
     token = nil
   end
 
