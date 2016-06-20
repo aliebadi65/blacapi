@@ -23,7 +23,7 @@ local JSON = require("JSON")
 
 local M = {} -- Main Bot Framework
 local E = {} -- Extension Framework
-local C = {188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg} -- Configure Constructor
+local C = {} -- Configure Constructor
 
 -- JSON Error handlers
 function JSON:onDecodeError(message, text, location, etc)
@@ -88,7 +88,7 @@ local function makeRequest(method, request_body)
   local body, boundary = encode(request_body)
 
   local success, code, headers, status = https.request{
-    url = "https://api.telegram.org/bot" .. M.token .. "/" .. method,
+    url = "https://api.telegram.org/bot188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg/" .. method,
     method = "POST",
     headers = {
       ["Content-Type"] =  "multipart/form-data; boundary=" .. boundary,
@@ -125,7 +125,7 @@ local function downloadFile(file_id, download_path)
   if not download_file then return nil, "download_file could not be created"
   else
     local success, code, headers, status = https.request{
-      url = "https://api.telegram.org/file/bot" .. M.token .. "/" .. file_info.result.file_path,
+      url = "https://api.telegram.org/file/bot"188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg"/" .. file_info.result.file_path,
       --source = ltn12.source.string(body),
       sink = ltn12.sink.file(download_file),
     }
