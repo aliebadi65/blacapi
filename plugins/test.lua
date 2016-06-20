@@ -88,7 +88,7 @@ local function makeRequest(method, request_body)
   local body, boundary = encode(request_body)
 
   local success, code, headers, status = https.request{
-    url = "https://api.telegram.org/bot188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg/" .. method,
+    url = "https://api.telegram.org/bot"188489357:AAGZ2S3q3TlM6c3qGIlIdv1mUDh5nIN-Hfg"/" .. method,
     method = "POST",
     headers = {
       ["Content-Type"] =  "multipart/form-data; boundary=" .. boundary,
